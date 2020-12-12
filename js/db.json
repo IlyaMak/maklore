@@ -1,0 +1,40 @@
+{
+    "sections": [
+        {
+            "id": 1,
+            "title": "Мужчинам",
+            "categories": [
+                {
+                    "id": 1,
+                    "title": "Свитшоты", 
+                    "products": [
+                        {
+                            "id": 1,
+                            "images": [
+                                "images/sweetshot1-1.img",
+                                "images/sweetshot1-2.img"
+                            ],
+                            "title": "Sweetshot 1",
+                            "description": "cool sweetshot",
+                            "color": "белый",
+                            "price": 9.99,
+                            "material": "хлопок 90%, полиэстер 10%",
+                            "sizes": [
+                                "S", "M", "L"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 2
+                }
+            ]
+        },
+        {
+            "id": 2
+        },
+        {
+            "id": 3
+        }
+    ]
+}
