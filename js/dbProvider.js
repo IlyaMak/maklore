@@ -12,3 +12,16 @@ const getSectionById = async (id) => {
 
     return filteredSections.length > 0 ? filteredSections.shift() : null;
 };
+
+const getProductById = async (id) => {
+    const jsonResponse = await fetchAll();
+
+    const allProducts = jsonResponse.sections.reduce((accumulator, section) => {
+        section.categories.forEach(category => accumulator.push(...category.products));
+        return accumulator;
+    }, []);
+
+    const filteredProducts = allProducts.filter(product => product.id === id);
+
+    return filteredProducts.length > 0 ? filteredProducts.shift() : null;
+};

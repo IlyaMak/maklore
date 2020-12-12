@@ -3,6 +3,7 @@
         {
             "id": 1,
             "title": "Мужчинам",
+            "image": "images/man.jpg",
             "categories": [
                 {
                     "id": 1,

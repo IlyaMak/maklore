@@ -7,11 +7,11 @@ window.onload = async () => {
 
 const renderSection = (section) => {
     const sectionContainer = document.querySelector('#section-container');
-    sectionContainer.innerHTML = section.categories.map(category => {
+    const categoryElements = section.categories.map(category => {
         const productElements = category.products.map(product => {
             return `<div class="item">
                     <a class="a-img" href="/product.html?id=${product.id}">
-                        <img src="${product.images[0]}" alt="sweatshirt-slot">
+                        <img src="${product.images[0]}" alt="${product.title}">
                     </a>
                     <div class="item-info">
                         <div class="price">
@@ -22,10 +22,17 @@ const renderSection = (section) => {
                         </div>
                     </div>
                     </div> `;
-        });
-        return `<div class="clothes">
-            <h2 class="name-cloth">${category.title}</h2>
-            <div class="row">${productElements.join('')}</div>
-        </div>`
+        }).join('');
+        return `
+            <div class="clothes">
+                <h2 class="name-cloth">${category.title}</h2>
+                <div class="row">${productElements}</div>
+            </div>`;
     }).join('');
+
+    sectionContainer.innerHTML = `
+        <div class="content">
+            <h1 class="section">${section.title}</h1>
+            ${categoryElements}
+        </div>`;
 };
