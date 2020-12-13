@@ -107,6 +107,12 @@ div a {
   border-radius: 40px 0 0 40px;
 }
 
+/* On hover, add a black background color with a little bit see-through */
+
+.prev:hover, .next:hover {
+  background-color: rgba(44, 44, 44, 0.7);
+}
+
 .right-place {
   width: 100%;
   height: 100%;

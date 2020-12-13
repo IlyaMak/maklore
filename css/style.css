@@ -178,14 +178,16 @@ div a {
   width: 100%;
 }
 
-.first-row {
+.rows {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .item {
-  width: 14%;
-  margin-left: 71px;
+  margin: 0 25px;
   margin-top: 60px;
+  display: inline-block;
+  flex: 13%;
 }
 
 .a-img {
@@ -206,10 +208,6 @@ div a {
   margin-top: 5px;
 }
 
-.second-row {
-  display: flex;
-}
-
 .footer {
   width: 100%;
   height: 50%;
@@ -219,7 +217,7 @@ div a {
 
 .first-chapter {
   text-align: center;
-  padding-top: 70px;
+  padding-top: 60px;
   font-size: 50px;
   font-weight: bold;
   font-family: Georgia, 'Times New Roman', Times, serif;
@@ -233,49 +231,57 @@ div a {
 
 .second-chapter {
   text-align: center;
-  padding-top: 160px;
+  padding-top: 110px;
   font-size: 18px;
 }
 
 /* On smaller screens, decrease text size */
 
-@media only screen and (max-width: 300px) {
+@media only screen and (max-width: 320px) {
   .prev, .next, .text {
     font-size: 11px
   }
 }
 
-@media (max-width: 1366px) {
-  .first-chapter {
-    padding-top: 60px;
+@media (min-width: 320px) and (max-width: 547px) {
+  .menu li {
+    min-width: 20%;
   }
-  .second-chapter {
-    padding-top: 110px;
+  div a {
+    font: bold 16px/40px sans-serif;
+    padding: 0 28px;
   }
-}
-
-@media (max-width: 720px) {
   * {
-      font-size: 13px;
+    font-size: 13px;
   }
   .slideshow-container {
-    margin: 0 70px;
+    margin: 10px 40px;
   }
   .prev, .next {
-    padding: 8px;
+    padding: 7px;
+  }
+  .dot {
+    height: 10px;
+    width: 10px;
+    margin: 0 2px;
+  }
+  .header-h2 {
+    font-size: 23px;
   }
   .item {
-    margin-left: 38px;
+    margin: 0 20px;
+    margin-top: 45px;
+    flex: 27%;
   }
   .footer {
-      height: 30%;
+    height: 30%;
   }
   .first-chapter {
-      font-size: 30px;
-      padding-top: 30px;
+    font-size: 30px;
+    padding-top: 30px;
   }
   .second-chapter {
-      font-size: 13px;
-      padding-top: 70px;
+    font-size: 13px;
+    padding-top: 17px;
   }
 }

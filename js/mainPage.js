@@ -45,15 +45,11 @@ const renderPopularProducts = (products) => {
                     </div>
                 </div>
             </div>`);
-            console.log(productElements[5]);
 
     productContainer.innerHTML = `
     <div class="popular">
-        <div class="first-row">
-            ${productElements.slice(0, 5).join('')}
-        </div>
-        <div class="second-row">
-            ${productElements.slice(5, 10).join('')}
+        <div class="rows">
+            ${productElements.join('')}
         </div>
     </div>`;
 }
