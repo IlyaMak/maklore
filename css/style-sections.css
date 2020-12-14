@@ -8,6 +8,7 @@ body {
     background-color: #f4f7ff;
 }
 
+/*Menu*/
 .mainUl {
     position: fixed;
     z-index: 1;
@@ -52,7 +53,6 @@ div a {
 }
 
 /*Content */
-
 .content {
     padding-top: 60px;
 }
@@ -62,7 +62,7 @@ div a {
 }
 
 .name-cloth {
-    padding-left: 71px;
+    padding-left: 30px;
     padding-top: 50px;
 }
 
@@ -72,12 +72,14 @@ div a {
 
 .row {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .item {
-    width: 14%;
-    margin-left: 71px;
-    margin-top: 20px;
+    margin: 0 25px;
+    margin-top: 30px;
+    display: inline-block;
+    flex: 14%;
 }
 
 .a-img {
@@ -98,17 +100,18 @@ div a {
     margin-top: 5px;
 }
 
+/*Footer*/
 .footer {
     width: 100%;
     height: 50%;
     background-color: rgb(45, 67, 85);
     border-radius: 10% 10% 0 0;
-    padding-top: 0;
+    padding: 0;
 }
 
 .first-chapter {
     text-align: center;
-    padding-top: 70px;
+    padding-top: 60px;
     font-size: 50px;
     font-weight: bold;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -116,44 +119,74 @@ div a {
 
 @-moz-document url-prefix() {
     .first-chapter {
-        padding-top: 80px;
+        padding-top: 30px;
     }
 }
 
 .second-chapter {
     text-align: center;
-    padding-top: 160px;
+    padding-top: 150px;
     font-size: 18px;
 }
 
-@media (max-width: 1366px) {
-    .first-chapter {
-        padding-top: 60px;
+/*Adaptive*/
+
+@media (min-width: 280px) and (max-width: 547px) {
+    .menu li {
+        min-width: 50%;
     }
-    .second-chapter {
-        padding-top: 110px;
+    div a {
+        font: bold 16px/30px sans-serif;
+        font-size: 14px;
+    }
+    .footer {
+        height: 60%;
+      }
+      .first-chapter {
+        font-size: 30px;
+        padding-top: 30px;
+      }
+      .second-chapter {
+        font-size: 17px;
+        padding-top: 60px;
+      }
+}
+
+@media (min-width: 280px) and (max-width: 900px) {
+    * {
+        font-size: 19px;
+    }
+    .item {
+        margin: 0 30px;
+        margin-top: 45px;
+        flex: 36%;
     }
 }
 
-@media (max-width: 720px) {
-    * {
-        font-size: 13px;
-    }
-    .name-cloth {
-        padding-left: 38px;
-    }
-    .item {
-        margin-left: 38px;
-    }
-    .footer {
-        height: 30%;
-    }
+@media (min-height: 465px) and (max-height: 568px) {
     .first-chapter {
-        font-size: 30px;
         padding-top: 30px;
+        font-size: 40px;
     }
     .second-chapter {
-        font-size: 13px;
-        padding-top: 70px;
+        padding-top: 90px;
+    }
+}
+
+@media (min-height: 568px) and (max-height: 639px) {
+    .footer {
+        height: 58%
+    }
+}
+
+@media (min-height: 700px) and (max-height: 721px) {
+    .footer {
+        height: 62%
+    }
+}
+
+@media (min-height: 812px) and (max-height: 824px) {
+    .footer {
+        height: 64%
     }
 }

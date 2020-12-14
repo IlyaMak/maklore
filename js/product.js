@@ -28,19 +28,19 @@ const renderProduct = (product) => {
                         <div class="price">
                             <span>${product.price} р.</span>
                         </div>
-                        <div class="color-product">
-                            <span><strong>Цвет:</strong> синий</span>
+                        <div class="color-size-product">
+                            <span class="color"><strong>Цвет:</strong> синий</span>
                             <select class="select-size">
                                 <option>Размеры</option>
                         ${sizeElements.join('')}
                             </select>
                         </div>
                         <div class="composition">
-                            <h1>Состав</h1>
+                            <h1 class="header-composition">Состав</h1>
                             <span>${product.material}</span>
                         </div>
                         <div class="description">
-                            <h1>Описание</h1>
+                            <h1 class="header-description">Описание</h1>
                             <p>${product.description}</p>
                         </div>
                     </div>
