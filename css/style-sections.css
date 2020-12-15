@@ -132,7 +132,7 @@ div a {
 
 /*Adaptive*/
 
-@media (min-width: 280px) and (max-width: 547px) {
+@media (min-width: 280px) and (max-width: 563px) {
     .menu li {
         min-width: 50%;
     }
@@ -141,15 +141,15 @@ div a {
         font-size: 14px;
     }
     .footer {
-        height: 60%;
+        height: 10%;
       }
       .first-chapter {
-        font-size: 30px;
-        padding-top: 30px;
+        font-size: 40px;
+        padding-top: 40px;
       }
       .second-chapter {
         font-size: 17px;
-        padding-top: 60px;
+        padding-top: 180px;
       }
 }
 

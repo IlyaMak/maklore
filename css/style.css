@@ -229,7 +229,7 @@ div a {
 
 /*Adaptive*/
 
-@media (min-width: 280px) and (max-width: 547px) {
+@media (min-width: 280px) and (max-width: 563px) {
   .menu li {
     min-width: 50%;
   }
@@ -278,11 +278,11 @@ div a {
   }
 }
 
-@media (min-height: 568px) and (max-height: 639px) {
+/* @media (min-height: 568px) and (max-height: 639px) {
   .footer {
     height: 51%
   }
-}
+}*/
 
 @media (min-height: 639px) and (max-height: 653px) {
   .footer {
@@ -296,8 +296,8 @@ div a {
   }
 }
 
-@media (min-height: 700px) and (max-height: 721px) {
-  .footer {
+@media (min-height: 700px) and (max-height: 721px) { */
+   .footer {
     height: 57%
   }
 }

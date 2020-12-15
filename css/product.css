@@ -134,7 +134,6 @@ div a {
 .description {
   padding-top: 55px;
   text-align: justify;
-  margin: 0 20px;
 }
 
 /*Footer*/
@@ -161,7 +160,7 @@ div a {
 
 /*Adaptive*/
 
-@media (min-width: 280px) and (max-width: 547px) {
+@media (min-width: 280px) and (max-width: 563px) {
   .menu li {
     min-width: 50%;
   }
@@ -220,14 +219,21 @@ div a {
   .description {
     padding-top: 20px;
     overflow-x: hidden;
+    margin: 0 20px;
+  }
+  .footer {
+    height: 40%;
   }
   .first-chapter {
-    font-size: 30px;
+    font-size: 40px;
     padding-top: 30px;
+  }
+  .second-chapter {
+    padding-top: 100px;
   }
 }
 
-@media (min-width: 547px) and (max-width: 1105px) {
+@media (min-width: 563px) and (max-width: 1105px) {
   .name-product {
     font-size: 13px;
     padding-top: 80px;

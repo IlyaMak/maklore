@@ -30,7 +30,7 @@ const renderProduct = (product) => {
                             <span>${product.price} р.</span>
                         </div>
                         <div class="color-size-product">
-                            <span class="color"><strong>Цвет:</strong> синий</span>
+                            <span class="color"><strong>Цвет:</strong> ${product.color}</span>
                             <select class="select-size">
                                 <option>Размеры</option>
                         ${sizeElements.join('')}
