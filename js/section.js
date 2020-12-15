@@ -11,7 +11,7 @@ const renderSection = (section) => {
     const categoryElements = section.categories.map(category => {
         const productElements = category.products.map(product => {
             return `<div class="item">
-                    <a class="a-img" href="/product.html?id=${product.id}">
+                    <a class="a-img" href="product.html?id=${product.id}">
                         <img src="${product.images[0]}" alt="${product.title}">
                     </a>
                     <div class="item-info">

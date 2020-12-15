@@ -10,8 +10,8 @@ const renderMainPage = (mainPage) => {
 
     const imageElements = mainPage.sections.map(section => `
     <div class="mySlides fade">
-        <a href="/section.html?id=${section.id}" style="padding: 0"><img class="slide_img" src="${section.image}" alt="${section.title}"></a>
-        <a class="text" href="/section.html?id=${section.id}">
+        <a href="section.html?id=${section.id}" style="padding: 0"><img class="slide_img" src="${section.image}" alt="${section.title}"></a>
+        <a class="text" href="section.html?id=${section.id}">
             <div>${section.title}</div>
         </a>
     </div>`);
@@ -36,7 +36,7 @@ const renderPopularProducts = (products) => {
     const productContainer = document.querySelector('#product-container');
     const productElements = products.map(product => `
             <div class="item">
-                <a class="a-img" href="/product.html?id=${product.id}"><img src="${product.images[0]}" alt="${product.title}"></a>
+                <a class="a-img" href="product.html?id=${product.id}"><img src="${product.images[0]}" alt="${product.title}"></a>
                 <div class="item-info">
                     <div class="price">
                         <span>${product.price}</span>
