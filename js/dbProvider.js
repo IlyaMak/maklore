@@ -1,5 +1,5 @@
 //Подключение JSON
-const dbUrl = '/js/db.json';
+const dbUrl = 'js/db.json';
 
 const fetchAll = async () => {
     let response = await fetch(dbUrl);
