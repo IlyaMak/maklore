@@ -1,3 +1,4 @@
+//Подключение JSON
 const dbUrl = '/js/db.json';
 
 const fetchAll = async () => {
@@ -5,6 +6,7 @@ const fetchAll = async () => {
     return await response.json();
 };
 
+//Получение разделов одежды по id
 const getSectionById = async (id) => {
     const jsonResponse = await fetchAll();
     const sections = jsonResponse.sections;
@@ -13,6 +15,7 @@ const getSectionById = async (id) => {
     return filteredSections.length > 0 ? filteredSections.shift() : null;
 };
 
+//Получение всех продуктов
 const getAllProducts = async () => {
     const jsonResponse = await fetchAll();
 
@@ -24,6 +27,7 @@ const getAllProducts = async () => {
     return allProducts;
 };
 
+//Получение продуктов по id
 const getProductById = async (id) => {
     const allProducts = await getAllProducts();
 
@@ -32,10 +36,12 @@ const getProductById = async (id) => {
     return filteredProducts.length > 0 ? filteredProducts.shift() : null;
 };
 
+//Сравнение популярных продуктов
 const comparePopularProducts = (product1, product2) => {
         return product2.numberOfViews - product1.numberOfViews;
 };
 
+//Получение популярных продуктов
 const getPopularProducts = async () => {
     const allProducts = await getAllProducts();
 

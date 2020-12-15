@@ -1,3 +1,4 @@
+//Вставка содержимого на главную страницу
 window.onload = async () => {
     renderMainPage(await fetchAll());
 

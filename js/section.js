@@ -1,3 +1,4 @@
+//Вставка содержимого страниц для разделов
 window.onload = async () => {
     const urlParams = new URLSearchParams(window.location.search);
     const sectionId = +urlParams.get('id');
